@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h1>WIKI</h1>
+    </div>
+    {% include 'nave.html' %}
+    <div>
+        <p>Bem vindo {{context.usuario}} a Wiki!</p>
+
+        <img src="{{url_for('static', filename='img/wiki.png')}}">
+
+        <br>
+        
+        <style>
+            * {
+                align-items: center;
+                text-align: center;
+                align-content: center;
+            }
+
+            h1{
+                margin-top: 2%;
+                font-size: 40px;
+            }
+
+            img {
+                width: 30%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+            }
+        </style>
+
+        
+        
+    </div>
+{% endblock %}
